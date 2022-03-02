@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>  
+<link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <style>
+body{background-image:url("https://i.postimg.cc/T3BPK555/IMG-20211203-063234-104.jpg");background-repeat: no-repeat;animation:none;background-size: 100% 100% 100%;}
+@keyframes fanim {0% {background-size: 100% 100% 100%;}25% {background-size: 105% 105% 105%;} 50% {background-size: 107% 107% 107%;} 75% {background-size: 105% 105% 105%;} 100% {background-size: 100% 100% 100%;}}
+</style>
+
+<div id='Content'>
+<div class="foto"><div class="image">
+<!-- Foto Atas -->
+  <img src="https://i.postimg.cc/VNtfvGX7/panda.gif" width="100px" height="100px"/></div><p id="textnama"></p></div>
+<div id='pergeseran'>
+<p><i>Geser yaa &#128073;</i></p>
+<p>Cie yang hari ini bertambah usianya</p>
+<p>Selamat ulang tahun yaa &#129395; dari seorang manusia kulkas</p>
+<p>Sehat-sehat selalu di sana &#128571;</p>
+<p>Semoga dengan bertambahnya usiamu,</p>
+<p>Kamu menjadi pribadi yang lebih baik, lebih mandiri, lebih pemberani, dan bisa masak, masa iya perempuan nga bisa masak<3</p>
+<p>Wish you all the best &#129395;</p>
+<p>Pencet kadonya &#128073; <a id="tm" onClick='kejut();'>[ &#127873; ]</a></p>
+</div>
+</div>
+<script>
+  //Audio Link MP3
+  function play() {var audio = new Audio('https://hei.likeadream.repl.co/kopet.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+  //Pembuka
+  var a=0,textnm;textnm = 
+  "Selamat Ulang Tahun Nelvy :)"
+
+const swals = Swal.mixin({allowOutsideClick: false,});
+async function kejut(){
+await swals.fire({
+  title: 'Happy Birthday',
+  text: 'Jangan lupa PU-nya! :v',
+  imageUrl: 'https://i.postimg.cc/5yVdrsCr/kado.gif',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'HBD',
+});
+await swals.fire('Kirim pesan ini ke no WhatsApp aku, oke?');
+window.location = "https://api.whatsapp.com/send?phone=082213943130text=Aku udah liat semuanya nih" + "%0A%0A" + "Makasii ya udah ngucapin!";}
+async function pgakmau(){
+await swals.fire('Yeh :v');}
+
+async function start() {await swals.fire('Selamat Ulang Tahun CCTV Berjalanツ');setTimeout(mulai, 900);play();}
+start();
+</script>
+    <script src="/script.js"></script>
+  </body>
+</html>
